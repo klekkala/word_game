@@ -108,10 +108,10 @@ var count = 0;
 function animate() {
     // render the stage
       
-   for(var i=0;i<100000;i++)
-    {
-      balloon.position.y+=0.00001;
-    }
+ //   for(var i=0;i<100000;i++)
+   // {
+     // balloon.position.y+=0.00001;
+    //}
     renderer.render(stage);
 	count+=0.05;
 	countingText.text = 'SCORE: ' + Math.floor(count);
