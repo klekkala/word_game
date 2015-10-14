@@ -267,7 +267,7 @@ function onButtonUp()
 	{
 		this.texture = texture3;
 		this.position.y=800;
-		//count+=1;
+		count+=1;
 		countingText.text = 'SCORE: ' + count;
 	}																																																																																																																	
 }
