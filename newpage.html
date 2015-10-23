@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <meta charset="UTF-8">
 <title> pixi.js example</title>
@@ -219,6 +219,7 @@ var count = 0;
 
 function animate() {
 	// render the stage
+	for(;;){
 	for(var j=1;j<5;j++){
 
 		var sprite = stage.children[j];
@@ -229,6 +230,7 @@ function animate() {
 			sprite.position.y=0;
 		}
 	}
+}
 
 
 
