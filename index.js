@@ -50,6 +50,7 @@ Fonts from Google Fonts
     
     
     binding: function(){
+      this.guessLetterInput = 'a';
       this.guessForm.on("submit", $.proxy(this.theGuess, this));
       this.restart.on("click", $.proxy(this.theRestart, this));
     },
@@ -78,6 +79,7 @@ Fonts from Google Fonts
 
     theGuess: function(e){
       e.preventDefault();
+      //var guess = a;
       var guess = this.guessLetterInput.val();
       if(guess.length == 1){
         if($.inArray(guess, this.wrongGuesses) > -1 || $.inArray(guess, this.rightGuesses) > -1){
