@@ -15,7 +15,7 @@
       this.wrongGuesses = [],
       this.rightGuesses = [],
       this.guessForm = $(".guessForm"),
-      this.guessLetterInput = $(".guessButton"),
+      this.guessLetterInput = $(".guessLetter"),
       this.goodSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/goodbell.mp3"),
       this.badSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/bad.mp3"),
       this.winSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/win.mp3"),
@@ -118,7 +118,7 @@
     showWrong: function(wrongGuesses){
       if(wrongGuesses){
         var frag = "<ul class='wrongLetters'>";
-        frag += "<p>Wrong Letters: </p>";
+        frag += "<p>गलत पत्र: </p>";
         $.each(wrongGuesses, function(key, val){
           frag += "<li>" + val + "</li>";
         });
